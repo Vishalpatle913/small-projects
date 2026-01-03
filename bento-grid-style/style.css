@@ -151,3 +151,50 @@ section>#right-center {
     background: #c4f4d7;
     border-radius: 10px;
 }
+section1 {
+    height: 100%;
+    width: 100%;
+    background-color:#333;
+    display: grid;
+    grid-template-columns:1.3fr 1fr 1fr 1fr;
+    grid-template-rows: 1.2fr 1fr;
+    gap: 15px;
+    padding: 15px;
+    grid-template-areas:"img-left img-top-right img-top-right img-top-right"
+                    "img-left img-bottom-left img-bottom-center img-bottom-right";
+}
+section1>#img-left {
+    grid-area: img-left;
+    border-radius: 10px;
+    background-image: url(./img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+section1>#img-top-right {
+    grid-area: img-top-right;
+    background-image: url(./img2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+section1>#img-bottom-left {
+    grid-area: img-bottom-left;
+    border-radius: 10px;
+    background-image: url(./img3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+section1>#img-bottom-center {
+    grid-area: img-bottom-center;
+    border-radius: 10px;
+    background-image: url(./img4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+section1>#img-bottom-right {
+    grid-area: img-bottom-right;
+    border-radius: 10px;
+    background-image: url(./img5.jpg);
+    background-size: cover;
+    background-position: center;
+}
